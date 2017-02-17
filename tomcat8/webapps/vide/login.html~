@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel=\"stylesheet\" href=\"/vide/style.css\" />
+   <TITLE>Login</TITLE>
+</HEAD>
+<BODY>
+<center>
+<h1>Authentification</h1>
+</center>
+
+<form action="/vide/servlet/Authent" method="post">
+  Login:<INPUT TYPE="text" SIZE="20" NAME="login" VALUE=""><br>
+  Mdp: <INPUT TYPE="password" SIZE="20" NAME="mdp" VALUE=""><br>
+  <INPUT TYPE=submit>
+</form>
+
+
+</BODY>
+</HTML>

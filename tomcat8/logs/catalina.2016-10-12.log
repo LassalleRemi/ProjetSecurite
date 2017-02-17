@@ -1,0 +1,265 @@
+12-Oct-2016 08:15:36.662 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 08:15:38.138 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:15:38.265 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:15:38.287 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:15:38.295 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:15:38.296 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3147 ms
+12-Oct-2016 08:15:38.592 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 08:15:38.593 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 08:15:38.674 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 08:15:41.758 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 3 075 ms
+12-Oct-2016 08:15:41.758 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 08:15:42.250 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 492 ms
+12-Oct-2016 08:15:42.250 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 08:15:42.480 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 230 ms
+12-Oct-2016 08:15:42.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 08:15:42.876 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 388 ms
+12-Oct-2016 08:15:42.876 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 08:15:43.185 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 309 ms
+12-Oct-2016 08:15:43.202 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:15:43.227 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:15:43.236 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4450 ms
+12-Oct-2016 08:24:13.702 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Oct-2016 08:24:13.702 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:24:13.710 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:24:13.710 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+12-Oct-2016 08:24:13.895 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:24:13.895 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:24:13.923 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:24:13.923 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:39:16.206 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 08:39:16.925 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:39:16.972 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:39:16.980 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:39:16.988 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:39:16.988 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1695 ms
+12-Oct-2016 08:39:17.097 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 08:39:17.097 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 08:39:17.144 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 08:39:19.251 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 2 099 ms
+12-Oct-2016 08:39:19.251 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 08:39:19.582 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 331 ms
+12-Oct-2016 08:39:19.589 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 08:39:19.754 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 165 ms
+12-Oct-2016 08:39:19.754 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 08:39:20.039 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 285 ms
+12-Oct-2016 08:39:20.039 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 08:39:20.309 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 270 ms
+12-Oct-2016 08:39:20.317 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:39:20.348 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:39:20.348 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3315 ms
+12-Oct-2016 08:52:17.654 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Oct-2016 08:52:17.654 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:52:17.660 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:52:17.661 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+12-Oct-2016 08:52:17.803 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:52:17.803 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:52:17.866 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:52:17.866 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:57:31.448 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 08:57:32.175 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:57:32.222 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:57:32.230 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:57:32.238 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 08:57:32.238 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1848 ms
+12-Oct-2016 08:57:32.378 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 08:57:32.378 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 08:57:32.425 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 08:57:34.541 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 2 116 ms
+12-Oct-2016 08:57:34.541 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 08:57:34.867 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 326 ms
+12-Oct-2016 08:57:34.867 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 08:57:35.062 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 195 ms
+12-Oct-2016 08:57:35.062 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 08:57:35.386 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 324 ms
+12-Oct-2016 08:57:35.387 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 08:57:35.697 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 310 ms
+12-Oct-2016 08:57:35.712 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 08:57:35.744 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 08:57:35.744 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3465 ms
+12-Oct-2016 09:01:37.581 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:01:37.948 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:03:28.172 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:03:28.919 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:05:49.081 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:05:49.490 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:07:30.758 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:07:31.125 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:09:32.102 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:09:32.489 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:10:41.705 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:10:42.444 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:11:23.578 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:11:23.976 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:12:04.322 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:12:04.797 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:12:35.056 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:12:35.431 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:13:35.616 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:13:36.086 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:15:56.178 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:15:56.605 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:16:17.075 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:16:17.221 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:16:36.433 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:16:36.807 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:17:08.857 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:17:09.368 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:17:29.795 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:17:29.981 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:18:14.677 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:18:15.069 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:19:36.722 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:19:37.157 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:20:00.077 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:20:00.305 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:22:01.077 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:22:01.369 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:22:09.415 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:22:09.592 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:24:36.334 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Oct-2016 09:24:36.334 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 09:24:36.334 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 09:24:36.342 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+12-Oct-2016 09:24:36.537 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 09:24:36.544 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 09:24:36.588 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 09:24:36.588 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 09:24:39.760 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 09:24:40.618 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 09:24:40.666 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 09:24:40.674 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 09:24:40.682 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 09:24:40.682 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1852 ms
+12-Oct-2016 09:24:40.835 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 09:24:40.835 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 09:24:40.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 09:24:43.293 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 2 410 ms
+12-Oct-2016 09:24:43.293 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 09:24:43.675 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 382 ms
+12-Oct-2016 09:24:43.675 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 09:24:43.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 208 ms
+12-Oct-2016 09:24:43.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 09:24:44.245 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 362 ms
+12-Oct-2016 09:24:44.245 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 09:24:44.522 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 277 ms
+12-Oct-2016 09:24:44.538 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 09:24:44.578 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 09:24:44.586 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3763 ms
+12-Oct-2016 09:28:40.341 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:28:40.818 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:29:10.764 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:29:11.327 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:29:40.264 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:29:40.491 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:31:42.255 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:31:42.661 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:32:11.981 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:32:12.247 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:33:23.382 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:33:24.124 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:38:56.255 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:38:56.591 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 09:58:41.141 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 09:58:41.586 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:22:04.603 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:22:05.116 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:30:09.586 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:30:09.947 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:35:33.289 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:35:33.770 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:36:24.309 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:36:24.719 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:36:54.961 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:36:55.340 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:38:56.498 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:38:56.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:43:59.691 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:44:00.060 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:44:30.328 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:44:30.681 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:45:01.098 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:45:02.737 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:45:43.096 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:45:43.490 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:47:14.253 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:47:14.653 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 10:55:28.741 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 10:55:29.155 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:04:54.448 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:04:54.790 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:05:55.269 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:05:55.550 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:07:26.341 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:07:26.745 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:08:07.097 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:08:07.460 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:10:29.047 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:10:29.426 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:10:59.789 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:11:00.171 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:16:50.889 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:16:51.272 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:20:24.727 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:20:24.999 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:23:01.357 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Oct-2016 11:23:01.358 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:23:01.363 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:23:01.365 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+12-Oct-2016 11:23:01.479 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:23:01.485 INFO [1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:23:01.487 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:23:01.492 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:23:05.393 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 11:23:06.167 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:23:06.207 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 11:23:06.215 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:23:06.222 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 11:23:06.223 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1758 ms
+12-Oct-2016 11:23:06.313 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 11:23:06.313 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 11:23:06.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 11:23:08.305 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 1 949 ms
+12-Oct-2016 11:23:08.306 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 11:23:08.589 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 283 ms
+12-Oct-2016 11:23:08.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 11:23:08.787 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 196 ms
+12-Oct-2016 11:23:08.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 11:23:09.131 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 342 ms
+12-Oct-2016 11:23:09.134 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 11:23:09.365 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 231 ms
+12-Oct-2016 11:23:09.393 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:23:09.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:23:09.424 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3205 ms
+12-Oct-2016 11:25:50.664 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:25:50.974 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+12-Oct-2016 11:45:41.333 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Oct-2016 11:45:41.344 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:45:41.399 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:45:41.452 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+12-Oct-2016 11:45:41.563 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:45:41.585 INFO [1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:45:41.601 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:45:46.788 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+12-Oct-2016 11:45:47.647 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:45:47.693 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 11:45:47.701 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:45:47.709 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Oct-2016 11:45:47.710 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1779 ms
+12-Oct-2016 11:45:47.841 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+12-Oct-2016 11:45:47.842 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+12-Oct-2016 11:45:47.893 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\vide de l'application web
+12-Oct-2016 11:45:50.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\vide has finished in 2 289 ms
+12-Oct-2016 11:45:50.184 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\manager de l'application web
+12-Oct-2016 11:45:50.497 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\manager has finished in 313 ms
+12-Oct-2016 11:45:50.498 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\test de l'application web
+12-Oct-2016 11:45:50.671 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\test has finished in 173 ms
+12-Oct-2016 11:45:50.673 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\host-manager de l'application web
+12-Oct-2016 11:45:50.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\host-manager has finished in 210 ms
+12-Oct-2016 11:45:50.885 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\tomcat8\webapps\ROOT de l'application web
+12-Oct-2016 11:45:51.149 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\tomcat8\webapps\ROOT has finished in 264 ms
+12-Oct-2016 11:45:51.159 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2016 11:45:51.185 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Oct-2016 11:45:51.188 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3477 ms
+12-Oct-2016 11:46:31.692 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+12-Oct-2016 11:46:32.365 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
