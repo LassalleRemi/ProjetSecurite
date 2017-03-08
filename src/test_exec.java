@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class test_exec {
     public static void main(String[] args) throws IOException {
-        Process process = Runtime.getRuntime().exec(new String[]{"./src_C/st_e","images/avion.bmp","bonjour tout le monde, comment ça va ?"});
+        Process process = Runtime.getRuntime().exec(new String[]{"./src_C/st_e","images/avion.bmp","login, mdp"});
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String buf = "";
