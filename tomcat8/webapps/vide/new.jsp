@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title>Création de compte</title>
+	<title>Inscription</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,15 +28,6 @@
 							<label for="password" class="control-label">Mot de passe</label>
 							<input type="password" class="form-control" id="password" name="mdp" value="">
 						</div>
-						<div class="form-group">
-							<label for="password" class="control-label">Nom</label>
-							<input type="text" class="form-control" id="nom" name="nom" value="">
-						</div>
-						<div class="form-group">
-							<label for="password" class="control-label">Prénom</label>
-							<input type="text" class="form-control" id="prenom" name="prenom" value="">
-						</div>
-
 						<button type="submit" class="btn btn-success btn-block">Envoyer</button>
 					</form>
 				</div>

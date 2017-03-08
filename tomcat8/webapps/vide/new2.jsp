@@ -11,7 +11,7 @@
 
 	<div class='container'>
 		<div class='page-header'>
-			<h1>Administration des informations.</h1>
+			<h1>Inscription</h1>
 		</div>
 		<div class='row'>
 			<div class='col-xs-12'>
@@ -19,39 +19,37 @@
 	<%	Connection con=null;
 		try {
 			Class.forName("org.sqlite.JDBC");
-			con = DriverManager.getConnection("jdbc:sqlite:../../database.db");;
+			con = DriverManager.getConnection("jdbc:sqlite:../../database.db");
 			String login = request.getParameter("login");
 	    	login = StringEscapeUtils.escapeHtml4(login);
 	    	String mdp = request.getParameter("mdp");
 	    	mdp = StringEscapeUtils.escapeHtml4(mdp);
-	    	String nom = request.getParameter("nom");
-	    	nom = StringEscapeUtils.escapeHtml4(nom);
-	   		String prenom = request.getParameter("prenom");
-	    	prenom = StringEscapeUtils.escapeHtml4(prenom);
 			if (con != null) {
-				try {
-					Statement stmt = con.createStatement();
-					String query = "select * from login where login="+login;								
-					ResultSet rs = stmt.executeQuery(query);
-					ResultSetMetaData rsmd = rs.getMetaData();
-					//Affichage de la table souhaité
-					while (rs.next()) {
-						println("Login déjà utilisé");
-						con.close();
-					}
-					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
-					con.close();
-				} catch (Exception e) {
-					%> 
-					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
-					<%
+				// Verification du login
+				Statement stmt = con.createStatement();
+				PreparedStatement ps = con.prepareStatement("select * from login where login=?");
+				ps.setString(1,login);
+				ResultSet rs = ps.executeQuery();
+				if(rs.next()) 
+				{
+					out.println("<div class='alert alert-danger' role='alert'>Le login "+ login +" est déja utilisé, veuillez en choisir un autre.</div>");
+					out.println("<a href='new.jsp'><button type='button' class='btn btn-default btn-lg'>Retour</button></a>");
+				}else{
+					ps = con.prepareStatement("insert into login values (?,?,?,?,'M')");
+					ps.setString(1,login);
+					ps.setString(2,mdp);
+					ps.setString(3,login);
+					ps.setString(4,login);
+					ps.executeUpdate();
+					out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+					out.println("<a href='login.jsp'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
 				}
 			}
 			if (con != null) {
 				con.close();
 			}
 		} catch (Exception e) {
-			out.println("Une erreur due a SQL est survenu.." + e.getMessage());
+			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu : " + e.getMessage()+"</div>");
 		}
 %>
 </body>

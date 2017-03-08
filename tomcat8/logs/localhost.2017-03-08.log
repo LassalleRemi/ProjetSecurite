@@ -1,0 +1,1916 @@
+08-Mar-2017 10:40:30.671 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /new2.jsp
+The method println(String) is undefined for the type new2_jsp
+32: 					ResultSetMetaData rsmd = rs.getMetaData();
+33: 					//Affichage de la table souhaité
+34: 					while (rs.next()) {
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /new2.jsp
+The method println(String) is undefined for the type new2_jsp
+32: 					ResultSetMetaData rsmd = rs.getMetaData();
+33: 					//Affichage de la table souhaité
+34: 					while (rs.next()) {
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:40:32.947 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.new2_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.new2_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:40:41.721 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /new2.jsp
+The method println(String) is undefined for the type new2_jsp
+32: 					ResultSetMetaData rsmd = rs.getMetaData();
+33: 					//Affichage de la table souhaité
+34: 					while (rs.next()) {
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /new2.jsp
+The method println(String) is undefined for the type new2_jsp
+32: 					ResultSetMetaData rsmd = rs.getMetaData();
+33: 					//Affichage de la table souhaité
+34: 					while (rs.next()) {
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:41:10.496 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						out.println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						out.println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+nom cannot be resolved to a variable
+35: 						out.println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+35: 						out.println("Login déjà utilisé");
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+nom+"','"+prenom+"','M')";	
+39: 					con.close();
+40: 				} catch (Exception e) {
+41: 					%> 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:47:23.072 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 39 dans le fichier jsp: /new2.jsp
+Duplicate local variable rs
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+login+"','"+login+"','M')";	
+39: 					ResultSet rs = stmt.executeQuery(query);
+40: 					response.sendRedirect("login.jsp");
+41: 				} catch (Exception e) {
+42: 					%> 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 39 dans le fichier jsp: /new2.jsp
+Duplicate local variable rs
+36: 						con.close();
+37: 					}
+38: 					query = "insert into login values ('"+login+"','"+mdp+"','"+login+"','"+login+"','M')";	
+39: 					ResultSet rs = stmt.executeQuery(query);
+40: 					response.sendRedirect("login.jsp");
+41: 				} catch (Exception e) {
+42: 					%> 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:59:11.851 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 49 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+46: 						ps.setString(4,login);
+47: 						rs = ps.executeQuery();
+48: 			
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 49 dans le fichier jsp: /new2.jsp
+prenom cannot be resolved to a variable
+46: 						ps.setString(4,login);
+47: 						rs = ps.executeQuery();
+48: 			
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue " + prenom + ", ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:59:39.658 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 10:59:57.935 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}finally{try {con.close();} catch (Exception e){}}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+56: 					<%
+57: 				}finally{try {con.close();} catch (Exception e){}}
+58: 			}
+59: 			if (con != null) {
+60: 				con.close();
+61: 			}
+
+
+An error occurred at line: [147] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [149] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [152] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [155] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [158] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [161] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:00:21.644 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 59 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+56: 					<%
+57: 				}
+58: 				finally{try {con.close();} catch (Exception e){}}
+59: 			}
+60: 			if (con != null) {
+61: 				con.close();
+62: 			}
+
+
+An error occurred at line: [148] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [151] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [151] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [154] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [156] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [159] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [159] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [163] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Finally" to complete TryStatement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "}" to complete Statement
+49: 						out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
+50: 						out.println("<a href='../login.html'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+51: 						}
+52: 					}
+53: 				} catch (Exception e) {
+54: 					%> 
+55: 					<div class='alert alert-success' role='alert'>Login déjà utilisé !</div>
+
+
+Une erreur s'est produite à la ligne: 59 dans le fichier jsp: /new2.jsp
+Syntax error on token "}", delete this token
+56: 					<%
+57: 				}
+58: 				finally{try {con.close();} catch (Exception e){}}
+59: 			}
+60: 			if (con != null) {
+61: 				con.close();
+62: 			}
+
+
+An error occurred at line: [148] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [150] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [151] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [151] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [153] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [154] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [156] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [159] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [159] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [162] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [163] in the generated java file: [/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/new2_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:09:18.740 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:09:25.386 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-success' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:10:33.006 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+e cannot be resolved
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+div cannot be resolved to a type
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Identifier ( )" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ";" to complete BlockStatements
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+e cannot be resolved
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+div cannot be resolved to a type
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Identifier ( )" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ";" to complete BlockStatements
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:11:02.533 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+e cannot be resolved
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+div cannot be resolved to a type
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Identifier ( )" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ";" to complete BlockStatements
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+e cannot be resolved
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+div cannot be resolved to a type
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert "Identifier ( )" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ")" to complete MethodInvocation
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error, insert ";" to complete BlockStatements
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage().</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:11:23.995 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token(s), misplaced construct(s)
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+String literal is not properly closed by a double-quote
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>");
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Mar-2017 11:11:47.993 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>);
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token ">", Expression expected after this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>);
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token "/", delete this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>);
+53: 		}
+54: %>
+55: </body>
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /new2.jsp
+Syntax error on token ">", Expression expected after this token
+49: 				con.close();
+50: 			}
+51: 		} catch (Exception e) {
+52: 			out.println("<div class='alert alert-danger' role='alert'>Une erreur due a SQL est survenu.." + e.getMessage()</div>);
+53: 		}
+54: %>
+55: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

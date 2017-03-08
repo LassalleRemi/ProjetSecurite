@@ -26,7 +26,7 @@
 						</div>
 						<div class="form-group">
 							<label for="password" class="control-label">Mot de passe</label>
-							<input type="password" class="form-control" id="password" name="mdp" value="">
+							<input type="pa ssword" class="form-control" id="password" name="mdp" value="">
 						</div>
 
 						<button type="submit" class="btn btn-success btn-block">Envoyer</button>
@@ -35,6 +35,10 @@
 				</div>
 			</div>
 		</div>
+	<%
+	String is3 = "images/avion.bmp";  
+	out.println("<img src='" + is3 + "' />");
+	%>
 	</body>
 </html>
 
