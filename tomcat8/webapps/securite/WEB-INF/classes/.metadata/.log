@@ -1,0 +1,50 @@
+!SESSION 2016-10-12 16:50:25.016 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data /home/infoetu/haliprer/Documents/tomcat8/webapps/vide/WEB-INF/classes -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.914
+!MESSAGE System property http.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.920
+!MESSAGE System property http.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.923
+!MESSAGE System property https.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.925
+!MESSAGE System property https.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.928
+!MESSAGE System property https.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 16:50:27.930
+!MESSAGE System property https.proxyPort is not set but should be 3128.
+!SESSION 2016-10-12 17:25:10.992 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.555
+!MESSAGE System property http.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.559
+!MESSAGE System property http.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.562
+!MESSAGE System property https.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.564
+!MESSAGE System property https.proxyPort is not set but should be 3128.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.567
+!MESSAGE System property https.proxyHost is not set but should be cache.univ-lille1.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-12 17:25:14.569
+!MESSAGE System property https.proxyPort is not set but should be 3128.
