@@ -4,7 +4,7 @@
 #include <sys/types.h>
 
 
-void encode(char *image,int imagelen,char *message,int messagelen) {
+void encode(char *image,int imagelen,char *message,int messagelen, char *name) {
   
   int i,j,shift;
   int messagebits;
@@ -36,8 +36,10 @@ void encode(char *image,int imagelen,char *message,int messagelen) {
       shift-=messagebits;  //i.e shift= shift-messagebits
   }
 
+  char dst[20];
+  sprintf(dst,"images/%s_out.bmp",name);
   printf("Enregistrement du fichier out.bmp sur le disque\n");
-  c = fopen("images/out.bmp","w");
+  c = fopen(dst,"w");
   fwrite(image,1,imagelen,c);
   fclose(c);
 }
@@ -45,12 +47,14 @@ void encode(char *image,int imagelen,char *message,int messagelen) {
 int main(int argc,char **argv)
 {
   FILE *file;
-  char *image=0,*message=0;
+  char *image=0,*message=0, src[20];
   int imagelen = 0,messagelen = 0;
   int bytesread;
 
-  printf("Ouverture du fichier image %s...",argv[1]);
-  file = fopen(argv[1],"r");
+  sprintf(src,"images/%s.bmp",argv[1]);
+
+  printf("Ouverture du fichier image %s ...",src);
+  file = fopen(src,"r");
   fseek(file,0,SEEK_END);
   imagelen = ftell(file);
   fseek(file,0,SEEK_SET);
@@ -63,7 +67,7 @@ int main(int argc,char **argv)
   messagelen=strlen(message);
   printf("la longeur du message est de : %d\n",messagelen);
   
-  encode(image,imagelen,message,messagelen);
+  encode(image,imagelen,message,messagelen,argv[1]);
  
   free(image);
   return 0;

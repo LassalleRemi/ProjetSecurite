@@ -34,5 +34,6 @@
 	<classpathentry kind="lib" path="tomcat8/lib/websocket-api.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/infoetu/haliprer/git/ProjetSecurite/tomcat8/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="/home/infoetu/lassallr/git/ProjetMode2016-L3/lib/sqlite-jdbc-3.14.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

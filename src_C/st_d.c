@@ -38,12 +38,14 @@ printf("le message est : %s\n",message);
 int main(int argc,char **argv)
 {
   FILE *file;
-  char *image=0;
+  char *image=0,src[20];
   int imagelen = 0;
   int bytesread;
 
-  printf("lecture du fichier Image %s...",argv[1]);
-  file = fopen(argv[1],"r");
+  sprintf(src,"images/%s_out.bmp",argv[1]);
+
+  printf("lecture du fichier Image %s...",src);
+  file = fopen(src,"r");
   fseek(file,0,SEEK_END);
   imagelen = ftell(file);
   fseek(file,0,SEEK_SET);
