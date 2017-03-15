@@ -1,6 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@ page
-	import="securite.Personne,java.io.*,javax.servlet.*,javax.servlet.http.*,javax.servlet.annotation.WebServlet,java.sql.*"%>
+	import="securite.Codage,securite.Personne,java.io.*,javax.servlet.*,javax.servlet.http.*,javax.servlet.annotation.WebServlet,java.sql.*"%>
 <html lang='fr'>
 <head>
 <meta charset='utf-8'>
@@ -12,21 +12,25 @@
 </head>
 <body>
 	<%
+		Codage code=new Codage();
 		Connection con=null;
+		String image=request.getParameter("image");
+		if(code.verif(image)){
 		try {
-		    
+		    String message=code.decode(image);
 		    // enregistrement du driver
 		    Class.forName("org.sqlite.JDBC");
 		    
 		    // connexion a la base
 		    //con = DriverManager.getConnection("jdbc:postgresql://psqlserv/n3p1?	allowMultiQueries=true","haliprer","moi");
-		      con = DriverManager.getConnection("jdbc:sqlite:../../database.db");
+		      con = DriverManager.getConnection("jdbc:sqlite:database.db");
+						
 			
 		    // execution de la requete
 		    Statement stmt = con.createStatement();
 		    PreparedStatement ps = con.prepareStatement("select * from login where login=? and mdp=?");
-		    ps.setString(1,request.getParameter("login"));
-		    ps.setString(2,request.getParameter("mdp"));
+		    ps.setString(1,message.split(":")[0]);
+		    ps.setString(2,message.split(":")[1]);
 		    ResultSet rs = ps.executeQuery();
 		    
 		    
@@ -66,7 +70,8 @@
 		try{
 			con.close();
 		} catch (Exception e){}
-	    }%>
+	    }
+		}%>
 </body>
 </html>
 

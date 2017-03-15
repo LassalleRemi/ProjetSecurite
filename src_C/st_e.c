@@ -37,7 +37,7 @@ void encode(char *image,int imagelen,char *message,int messagelen, char *name) {
   }
 
   char dst[20];
-  sprintf(dst,"images/%s_out.bmp",name);
+  sprintf(dst,"tomcat8/webapps/securite/Images/%s_out.bmp",name);
   printf("Enregistrement du fichier out.bmp sur le disque\n");
   c = fopen(dst,"w");
   fwrite(image,1,imagelen,c);
@@ -51,7 +51,7 @@ int main(int argc,char **argv)
   int imagelen = 0,messagelen = 0;
   int bytesread;
 
-  sprintf(src,"images/%s.bmp",argv[1]);
+  sprintf(src,"tomcat8/webapps/securite/Images/%s.bmp",argv[1]);
 
   printf("Ouverture du fichier image %s ...",src);
   file = fopen(src,"r");

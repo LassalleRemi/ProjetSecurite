@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 	<meta charset="utf-8">
@@ -19,7 +19,7 @@
 		    </div>
 	    	<div class="row">
 	        	<div class="col-xs-6 col-xs-offset-3">
-					<form id="loginForm" method="POST" action="Inscription_BDD.jsp">
+					<form id="loginForm" method="POST" action="inscription_BDD.jsp">
 						<div class="form-group">
 							<label for="login" class="control-label">Login</label>
 							<input type="text" class="form-control" id="login" name="login" value="">

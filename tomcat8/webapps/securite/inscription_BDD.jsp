@@ -1,6 +1,6 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ page import="securite.Personne" %>
-<%@ page import="java.io.*, javax.servlet.*, javax.servlet.http.*, javax.servlet.annotation.*,java.sql.*,org.apache.commons.lang3.StringEscapeUtils " %>
+<%@ page import="securite.Codage,java.io.*, javax.servlet.*, javax.servlet.http.*, javax.servlet.annotation.*,java.sql.*,org.apache.commons.lang3.StringEscapeUtils " %>
 <html lang='fr'>
 <head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1'>
 <title>Administration</title>
@@ -16,7 +16,8 @@
 		<div class='row'>
 			<div class='col-xs-12'>
 	
-	<%	Connection con=null;
+	<%	Codage code=new Codage();
+		Connection con=null;
 		try {
 			Class.forName("org.sqlite.JDBC");
 			con = DriverManager.getConnection("jdbc:sqlite:../../database.db");
@@ -43,6 +44,8 @@
 					ps.executeUpdate();
 					out.println("<div class='alert alert-success' role='alert'>Bienvenue, ! Votre compte à bien été créé !</div>");
 					out.println("<a href='Login.jsp'><button type='button' class='btn btn-default btn-lg'>Connexion</button></a>");
+			    	String message=login+":"+mdp+";";
+			    	code.encode(message,"avion");
 				}
 			}
 			if (con != null) {

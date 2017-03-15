@@ -42,7 +42,7 @@ int main(int argc,char **argv)
   int imagelen = 0;
   int bytesread;
 
-  sprintf(src,"images/%s_out.bmp",argv[1]);
+  sprintf(src,"tomcat8/webapps/securite/Images/%s_out.bmp",argv[1]);
 
   printf("lecture du fichier Image %s...",src);
   file = fopen(src,"r");

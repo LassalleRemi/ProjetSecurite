@@ -8,12 +8,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Chiffrement {
-	public void encode(String message){
-		String image="images/avion.bmp";
+	public void encode(String message,String image){
 		String taille = "";
 		String buf = "";
 		try {
-			Process process = Runtime.getRuntime().exec(new String[]{"./src_C/st_e","avion",message});
+			Process process = Runtime.getRuntime().exec(new String[]{"./src_C/st_e",image,message});
 		} catch(IOException ioe) {
             ioe.printStackTrace();
         }
@@ -81,13 +80,13 @@ public class Chiffrement {
 	
     public static void main(String[] args) throws IOException {
     	Chiffrement test=new Chiffrement();
-		if(args[0].equals("new") && args.length==3){
-    		String login=args[1];		
-    		String mdp=args[2];
+		if(args[0].equals("new") && args.length==4){
+			String image=args[1];
+    		String login=args[2];		
+    		String mdp=args[3];
         	String message=login+":"+mdp+";";
-//        	test.encode(message);
-//        	System.out.println(login+" "+mdp+" enregistré dans avion_out.bmp\n");
-        	int taille=message.length();
+        	test.encode(message,image);
+        	System.out.println(login+" "+mdp+" enregistré dans "+image+"_out.bmp\n");
 		}else if (args[0].equals("authent") && args.length==2){
 			String image=args[1];
 	        System.out.println("verification en cours");

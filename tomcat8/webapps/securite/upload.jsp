@@ -18,8 +18,8 @@
 
 		<%
 		   File file ;
-		   int maxFileSize = 5000 * 1024;
-		   int maxMemSize = 5000 * 1024;
+		   int maxFileSize = 6000 * 1024;
+		   int maxMemSize = 6000 * 1024;
 		   ServletContext context = pageContext.getServletContext();
 		   String filePath = context.getInitParameter("file-upload");
 
@@ -58,19 +58,22 @@
 				    String fieldName = fi.getFieldName();
 				    String fileName = fi.getName();
 				    boolean isInMemory = fi.isInMemory();
+				    String path="Images/"+fileName;
 				    long sizeInBytes = fi.getSize();
 				    // Write the file
 				    if( fileName.lastIndexOf("\\") >= 0 ){
-				    file = new File( filePath + 
-				    fileName.substring( fileName.lastIndexOf("\\"))) ;
+				    file = new File("images/"+fileName.substring( fileName.lastIndexOf("\\"))) ;
+				    file = new File("tomcat8/webapps/securite/Images/"+fileName.substring( fileName.lastIndexOf("\\"))) ;
 				    }else{
-				    file = new File( filePath + 
-				    fileName.substring(fileName.lastIndexOf("\\")+1)) ;
+				    file = new File("images/"+fileName.substring(fileName.lastIndexOf("\\")+1)) ;
+				    file = new File("tomcat8/webapps/securite/Images/"+fileName.substring(fileName.lastIndexOf("\\")+1)) ;
 				    }
 				    fi.write( file ) ;
-				    out.println("Uploaded Filename: " + filePath + 
-				    fileName + "<br>");
-				    }
+				    out.println("Uploaded Filename: " + fileName + "<br>");
+				    String name=fileName.split("_")[0];%>
+				    <img src=<%=path%> />
+				    <a href="authen.jsp?image=<%=name %>" > Valider </a>
+				    <%}
 				 }
 				 out.println("</body>");
 				 out.println("</html>");
